@@ -11,6 +11,7 @@ Practice-based work covering core concepts:
 - Variables and basic syntax
 - Loops and control flow
 - Lists and dictionaries
+- Structured calculation
 - Drills and consolidation exercises
 
 ### Projects
