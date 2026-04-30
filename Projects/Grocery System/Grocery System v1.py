@@ -1,7 +1,14 @@
 #Grocery System v1
+#import module
+import json
 
-#List to hold items
-grocery_list = []
+#Try to open file if not found, creates new list
+try:
+    with open("grocery_data.json","r") as file:
+        grocery_list = json.load(file)
+except FileNotFoundError:
+    grocery_list = []
+
 
 #control
 x = "1"
@@ -12,7 +19,10 @@ while x == "1":
     if x != "1":
         break
     else:
-        grocery_item = {"Item Name":input("Enter item Name: "),"Price":input("Enter item Price: "),"Quantity":input("Enter item Quantity: "),"Date":input("Enter today's date (DD/MM/YY): "),"Category":input("Enter item Category: "),"Store":input("Enter store Name: ")}
+        grocery_item = {"Item Name":input("Enter item Name: "),"Price":float(input("Enter item Price: ")),"Quantity":int(input("Enter item Quantity: ")),"Date":input("Enter today's date (DD/MM/YY): "),"Category":input("Enter item Category: "),"Store":input("Enter store Name: ")}
         grocery_list.append(grocery_item)
 
-print(grocery_list)
+with open("grocery_data.json", "w") as file:
+    json.dump(grocery_list, file, indent=4)
+    
+print("Data saved successfully.")
