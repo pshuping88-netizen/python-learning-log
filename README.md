@@ -1,32 +1,37 @@
 # python-learning-log
-Python fundamentals and project-based learning, progressing toward data science.
+
+Python fundamentals and project-based progression toward data science and structured data analysis.
 
 ## Overview
-This repository tracks my progression in Python, focusing on building strong fundamentals and applying them through small projects.
+This repository documents a structured learning path in Python, with emphasis on building core programming skills and applying them to data-driven problems.
+
+The focus is on transforming raw structured data into computed insights using Python.
 
 ## Structure
 
 ### Fundamentals
-Practice-based work covering core concepts:
-- Variables and basic syntax
-- Loops and control flow
-- Lists and dictionaries
-- Structured calculation
-- Drills and consolidation exercises
+Practice-based exercises focused on core programming and data handling patterns:
+- Variables, syntax, and control flow
+- Loops and conditional logic
+- Lists and dictionaries (structured data handling)
+- Aggregation and computed metrics
+- Structured output formatting and reporting patterns
 
 ### Projects
-Applied work using Python:
-- Grocery System (basic project using loops, conditionals, and data structures)
+Applied implementations using Python:
+- Grocery System (data handling, iteration, and basic system logic)
 
 ## Current Focus
-- Strengthening core Python skills
-- Writing cleaner, more structured code
-- Preparing for data science projects
+- Strengthening structured problem-solving with Python
+- Improving code clarity and consistency
+- Building repeatable data processing patterns
+- Transitioning from basic scripts to modular thinking
 
 ## Next Steps
-- Improve existing projects (add validation, better structure)
-- Start data-focused projects
-- Build consistency in output and version control
+- Refactor existing work into reusable functions
+- Introduce modular project structure
+- Expand into data-centric mini-projects
+- Improve version control discipline (clear commits, iterative development)
 
 ## Tools
 - Python
