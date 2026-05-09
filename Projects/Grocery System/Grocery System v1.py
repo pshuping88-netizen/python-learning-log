@@ -1,4 +1,4 @@
-#Grocery System v1
+#Grocery System v2
 #import module
 import json
 from datetime import date #(Only imports date function)
@@ -16,6 +16,15 @@ categories = ["Staple","Protein","Produce","Snacks","Drinks","Household"]
 #Grocery Stores
 stores = ["PicknPay","Checkers","Spar","Shoprite","Other"]
 
+#Functions
+def get_non_empty_str(text):
+    while True:
+         stripped_text = input(text).strip()
+         if stripped_text == "":
+             print("Text cannot be empty!")
+             continue
+         return stripped_text
+            
 #Main Loop
 while True:
     #Display CLI menu
@@ -35,16 +44,7 @@ while True:
         case 1:
             #Add item
             #Error Handling
-            while True:
-                name_input = input("Enter item Name: ")
-                try:
-                    if name_input.strip() == "":
-                        print("Invalid Entry, Please enter a valid item name!")
-                        continue
-                    item_name = name_input.strip()
-                    break
-                except ValueError:
-                    print("Invalid Entry, Please enter valid item name!")
+            item_name = get_non_empty_str("Enter item name: ")
             
             while True:
                 price_input = input("Enter item Price: ")
