@@ -47,6 +47,9 @@ def get_valid_num(text,number_type,min_val,max_val):
                     print("Value does not meet criteria! Enter a value that meets criteria: ")
                     continue
 
+def view_items(data_list):
+     print("View Items")
+
 #Main Loop
 while True:
     #Display CLI menu
@@ -57,8 +60,7 @@ while True:
 
     #Match Case
     match user_choice:
-        case 1:
-            #Add item (With Function Reused in recognised patterns)
+        case 1:#Add item (With Function Reused in recognised patterns)
             #item Name
             item_name = get_non_empty_str("Enter item name: ")
             #item Price
